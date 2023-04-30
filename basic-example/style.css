@@ -1,0 +1,38 @@
+*{
+    margin:0px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    height: 80px;
+    align-items: center;
+    position:fixed;
+    width:100%;
+}
+.navbar a{
+    text-decoration:none;/*to remove the underline from the link*/
+    color:coral;
+    font-size: 20px;
+    padding:10px;
+}
+.navbar a:hover{
+    color:blueviolet;
+    background-color: bisque;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left{
+    margin-top: 100px;
+    padding:100px;
+}
+
+.right img{
+    margin-top: 100px;
+    width: 100%;
+    padding: 100px;
+}

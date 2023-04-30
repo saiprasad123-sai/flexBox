@@ -1,0 +1,71 @@
+.container{
+    background-color: aqua;
+    height:400px;
+    display: flex;
+    /* flex-direction: row,column,row-reverse,column-reverse;
+    flex-wrap: nowrap,wrap,wrap-reverse; */
+    /*flex-flow: row wrap; a combined attributes of display-flex,flex-direction,flex-wrap*/
+    /* justify-content: start; begins from the left with space at right*/
+    /* justify-content: end; ends at right with space at left */
+    /* justify-content: center; equal spacing at left and right along x axis*/
+    /* justify-content: space-between; space between wraped columns along x axis*/
+    /* justify-content: space-around; space between left and right and cojoined space between wraped columns along x axis*/
+    /* justify-content: space-evenly; equal space between the wraped columns and at the left and right along x axis */
+    
+    /* align-items: used to arrange elements in y axis; 
+    it works only on single row i.e flex-wrap:nowrap.
+
+    by default it is 'stretch'.
+    
+    align-items => stretch,flex-start,flex-end,center,baseline*/
+
+    flex-flow:row wrap;
+
+    /*align-items:flex-start;arranges itself at the top*/
+    /*align-items: flex-end; arranges itself at the bottom*/
+    /*align-items: center; all the items are arranged at the center in a row*/
+    /*align-items: baseline; all the items are arranged in such a way that the flexboxes are in same row wrt to whether it is in top or bottom.*/
+
+    /* align-content: align the items wrt the y-axis;
+    it works only when you have multiple rows and flex-wrap: wrap; */
+  
+    /*by default it is 'stetch'.*/
+
+    /* align-content => flex-start,flex-end,stretch,center,space-between,space-around,space-evenly */
+
+    /* gap:gives space between elements along x and y axis */
+    row-gap: 20px;
+    column-gap: 30px;
+    /* row-gap:space between rows 
+    column-gap: space between columns
+    gap:row-gap column-gap => short-hand for adding row and column gap.
+    */
+
+    
+}
+
+.container .item{
+    width:20%;
+    background-color: blueviolet;
+    font-size: 20px;
+    color:white;
+    padding: 20px;
+    border:5px solid black;
+    margin: 3px;
+}
+.parent{
+    background-color: aqua;
+    height:400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
+.parent .item{
+    width:20%;
+    background-color: red;
+    font-size: 20px;
+    color:white;
+    padding: 20px;
+    border:5px solid black;
+    margin: 10px;
+}
